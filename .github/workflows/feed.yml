@@ -1,0 +1,14 @@
+name: 'Script Auto refresh feed'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+jobs:
+  feed_refresh:
+    runs-on: windows-2022
+    
+    steps:
+      - name: 'Refresh feed in fresh ....' 
+        run: |
+          cmd /c curl 'https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=fqs&token=TSue%5E%21YGLX8WTS&ajax=1'
