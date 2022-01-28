@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: 'Refresh feed in fresh ....' 
         run: |
-          cmd /c curl 'https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=fqs&token=TSue%5E%21YGLX8WTS&ajax=1'
+          cmd /c curl https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=fqs&token=TSue%5E%21YGLX8WTS&ajax=1
