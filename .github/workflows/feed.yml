@@ -6,9 +6,9 @@ on:
     - cron: '*/30 * * * *'
 jobs:
   feed_refresh:
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
     
     steps:
       - name: 'Refresh feed in fresh ....' 
         run: |
-          cmd /c curl "https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=fqs&token=TSue%5E%21YGLX8WTS&ajax=1"
+          curl 'https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=fqs&token=TSue%5E%21YGLX8WTS&ajax=1'
