@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: 'Refresh feed in fresh ....' 
         run: |
-          curl 'https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=\"%SECRET_USER%\"&token=\"%SECRET_TOKEN%\"&ajax=1'
+          curl 'https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user='%SECRET_USER%'&token='%SECRET_TOKEN%'&ajax=1'
