@@ -7,8 +7,10 @@ on:
 jobs:
   feed_refresh:
     runs-on: ubuntu-latest
-    
+    env:
+      SECRET_USER: ${{ secrets.USER }}
+      SECRET_TOKEN: ${{ secrets.TOKEN }}
     steps:
       - name: 'Refresh feed in fresh ....' 
         run: |
-          curl 'https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=fqs&token=TSue%5E%21YGLX8WTS&ajax=1'
+          curl 'https://fresh.fengyushanzhi.cf/p/i/?c=feed&a=actualize&user=%SECRET_USER%&token=%SECRET_TOKEN%&ajax=1'
